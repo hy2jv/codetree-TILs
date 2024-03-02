@@ -8,7 +8,7 @@ for _ in range(int(input())):
     elif command[0] == 'pop':
         if len(q) == 0: print(-1)
         else:
-            print(q.pop())
+            print(q.popleft())
     elif command[0] == 'size':
         print(len(q))
     elif command[0] == 'empty':
@@ -25,4 +25,4 @@ for _ in range(int(input())):
         else:
             x = q.pop()
             print(x)
-            q.appendleft(x)
+            q.append(x)
