@@ -1,11 +1,13 @@
-n = int(input())
-arr = [0] * (n+1)
-arr[0] = 1
-arr[1] = 1
-arr[2] = 2
-for idx in range(3, n+1):
-    result = 0
-    for i in range(n):
-        result += (arr[i] * arr[n-i-1])
-    arr[idx] = result
-print(arr[n])
+def sequence(n):
+    if n == 0:
+        return 1
+    else:
+        t = [1]
+        for i in range(1, n+1):
+            total = 0
+            for j in range(i):
+                total += t[j] * t[i-j-1]
+            t.append(total)
+        return t[n]
+
+print(sequence(int(input())))
