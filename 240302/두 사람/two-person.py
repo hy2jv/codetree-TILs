@@ -1,0 +1,5 @@
+p1_age, p1_gender = input().split()
+p2_age, p2_gender = input().split()
+p1_age = int(p1_age)
+p2_age = int(p2_age)
+print(1 if (p1_age >= 19 and p1_gender == 'M') or (p2_age >= 19 and p2_gender == 'M') else 0)
