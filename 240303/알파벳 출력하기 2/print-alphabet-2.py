@@ -4,6 +4,6 @@ idx = 0
 for i in range(n):
     print('  ' * i, end='')
     for j in range(n-i):
-        print(arr[idx], end=' ')
+        print(arr[idx%10], end=' ')
         idx += 1
     print()
