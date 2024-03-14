@@ -8,4 +8,4 @@ for i in range(n):
     if searchChar in arr[i]:
         cnt += arr[i].count(searchChar)
         result += len(arr[i])
-print('%d %.2f' % (cnt, round(result/cnt, 2)))
+print('%d %.2f' % (cnt, result/cnt))
