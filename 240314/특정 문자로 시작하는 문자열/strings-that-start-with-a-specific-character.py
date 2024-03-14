@@ -3,7 +3,7 @@ arr = []
 for i in range(n):
     arr.append(input())
 searchChar = input()
-cnt, result = 0, 9
+cnt, result = 0, 0
 for i in range(n):
     if searchChar in arr[i]:
         cnt += arr[i].count(searchChar)
